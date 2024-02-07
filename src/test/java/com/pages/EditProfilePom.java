@@ -10,8 +10,7 @@ public class EditProfilePom extends BaseClass{
 	public EditProfilePom() {
 		PageFactory.initElements(driver, this);
 	}
-	@FindBy(id = "playerAadharCard")
-	private WebElement adhar;
+	
 	@FindBy(id ="idProof")
 	private WebElement upload;
 	@FindBy(id="goals")
@@ -24,14 +23,13 @@ public class EditProfilePom extends BaseClass{
 	private WebElement vaccination;
 	@FindBy(id = "vaccineCertificates")
 	private WebElement uploadVaccine;
-	public WebElement getUploadVaccine() {
+	
+        public WebElement getUploadVaccine() {
 		return uploadVaccine;
 	}
 	@FindBy(name="save")
 	private WebElement save;
-	public WebElement getAdhar() {
-		return adhar;
-	}
+	
 	
 	public WebElement getUpload() {
 		return upload;
