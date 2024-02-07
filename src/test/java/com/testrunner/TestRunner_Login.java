@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 import io.cucumber.junit.CucumberOptions.SnippetType;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(monochrome=true
+@CucumberOptions(monochrome=false
 ,stepNotifications = true
 ,dryRun = false
 ,features={"src\\test\\resources\\Features\\Login.feature"}
